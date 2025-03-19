@@ -3,10 +3,10 @@ package test1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Show implements Calculation {
-
+public class Show implements Calculation {	// 단어 목록을 출력하는 클래스 구현
+	
 	List<String> li = new ArrayList<>();
-	Show(List li){
+	Show(List li){	
 		this.li = li;
 	}
 	@Override
