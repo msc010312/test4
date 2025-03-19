@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Sort implements Calculation {
+public class Sort implements Calculation {// 단어 목록을 정렬하는 클래스 구현
 
 	List <String> li = new ArrayList<>();
 	
@@ -16,9 +16,9 @@ public class Sort implements Calculation {
 	public void sort(boolean isAsend) {
 		// TODO Auto-generated method stub
 		if (isAsend == true) {
-			Collections.sort(li);
+			Collections.sort(li);	// 오름차순 정렬
 		}else {
-			li.sort(Collections.reverseOrder());
+			li.sort(Collections.reverseOrder());//내림차순 정렬
 		}
 		
 	}
