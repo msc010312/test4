@@ -55,7 +55,7 @@ public class ex {
 	}
 
 	public static int updateBook(BookDTO bookDto) throws SQLException {
-		pstmt = conn.prepareStatement("update tbl_book set BookCode=?,"+"BookName=?,Publisher=?,Isbn=?");
+		pstmt = conn.prepareStatement("update tbl_book set BookName=?,Publisher=? where BookCode=2");
 		pstmt.setLong(1, bookDto.getBookCode());
 		pstmt.setString(2, bookDto.getBookName());
 		pstmt.setString(3, bookDto.getPublisher());
@@ -72,9 +72,9 @@ public class ex {
 		try {
 			conn();
 			// insert
-			insertBook(new BookDTO(1L, "도서명1", "출판사명1", "isbn-1"));
-			insertBook(new BookDTO(2L, "도서명2", "출판사명2", "isbn-2"));
-			insertBook(new BookDTO(3L, "도서명3", "출판사명3", "isbn-3"));
+//			insertBook(new BookDTO(1L, "도서명1", "출판사명1", "isbn-1"));
+//			insertBook(new BookDTO(2L, "도서명2", "출판사명2", "isbn-2"));
+//			insertBook(new BookDTO(3L, "도서명3", "출판사명3", "isbn-3"));
 
 			// selectAll
 //			List<BookDTO> allBook = selectAll();
