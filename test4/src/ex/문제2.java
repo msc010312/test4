@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ex {
+public class 문제2 {
 	// db정보
 	private static String id = "root";
 	private static String pw = "1234";
