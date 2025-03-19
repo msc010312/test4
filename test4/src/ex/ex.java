@@ -54,8 +54,14 @@ public class ex {
 		return pstmt.executeUpdate();
 	}
 
-	public static int updateBook(BookDTO bookDto) {
-		return -1;
+	public static int updateBook(BookDTO bookDto) throws SQLException {
+		pstmt = conn.prepareStatement("update tbl_book set BookCode=?,"+"BookName=?,Publisher=?,Isbn=?");
+		pstmt.setLong(1, bookDto.getBookCode());
+		pstmt.setString(2, bookDto.getBookName());
+		pstmt.setString(3, bookDto.getPublisher());
+		pstmt.setString(4, bookDto.getIsbn());
+
+		return pstmt.executeUpdate();
 	}
 
 	public static int deleteBook(BookDTO dto) {
