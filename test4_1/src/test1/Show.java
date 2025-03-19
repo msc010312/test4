@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Show implements Calculation {
+
 	List<String> li = new ArrayList<>();
 	Show(List li){
 		this.li = li;
@@ -26,6 +27,7 @@ public class Show implements Calculation {
 			System.out.println(item);
 		}
 	}
+
 
 
 }

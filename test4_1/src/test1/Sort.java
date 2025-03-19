@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Sort implements Calculation {
+
 	List <String> li = new ArrayList<>();
 	
 	Sort(List li){

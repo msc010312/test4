@@ -23,7 +23,7 @@ public class 문제1 {
 			System.out.println("3 확인");
 			System.out.println("4 종료");
 			System.out.println("----------------M E N U----------------");
-			System.out.println("번호 : ");
+			System.out.print("번호 : ");
 			n = sc.nextInt();
 			switch (n) {
 			case 1:
