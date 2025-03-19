@@ -39,7 +39,9 @@ public class ex {
 				System.out.print(rs.getString("bookName") + " ");
 				System.out.print(rs.getString("publisher") + "\n");
 				System.out.print(rs.getString("isbn") + "\n");
+			
 			}
+			
 		}
 		return null;
 	}
