@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Add implements Calculation{
+
 	List<String> wordList;
 	Add(List<String> wordList){
 		this.wordList = wordList;
@@ -27,6 +28,5 @@ public class Add implements Calculation{
 		
 	}
 	
-
 
 }
